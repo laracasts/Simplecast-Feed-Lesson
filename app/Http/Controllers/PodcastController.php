@@ -24,6 +24,11 @@ class PodcastController extends Controller
         $this->guzzle = $guzzle;
     }
 
+    /**
+     * Display the episode list.
+     *
+     * @return \Response
+     */
     public function index()
     {
         $feed = $this->fetchFeed();
